@@ -1,0 +1,4 @@
+		Comandos do Sequelize-cli:
+npx sequelize-cli model:generate --name Niveis --attributes descr_nivel:string
+npx sequelize-cli seed:generate --name niveis
+npx sequelize-cli db:seed:all

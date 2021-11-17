@@ -1,0 +1,31 @@
+					Git:
+git status (Ver status do projeto);
+git diff (Ver modificações nos arquivos);
+git diff --staged (Ver arquivos que estão no commit x originais);
+git stash (Para salvar os dados temporariamente em um local reservado, para podemos recuperar eles em outro momento);
+git stash list (Listar os dados que estão salvos temporariamente);
+git stash pop (Para tirar do espaço temporário e trazer o arquivo para commitar);
+git push local master (Envia os dados do master para o local);
+git pull local master (Sincroniza o local com os dados da master);
+git restore --staged arquivo.extensão (Restaura arquivo antes da modificação commit);
+git restore arquivo.extensão (Restaura arquivo antes da modificação);
+git rm arquivo (Remove arquivo do projeto);
+git rm -r --cached . (Remove todos os arquivos do cache "estavam rastreados");
+git mv arquivo novoArquivo (Renomear arquivos);
+git mv arquivo subCaminho/arquivo (Mover arquivo);
+git commit --amend -m "Nova mensagem" (alterar ultimo commit "-m e opcional");
+git checkout começo-do-sha1 -- arquivo (Recuperar arquivo de algum commit passado, "Para pegar o começo do sha1 git status");
+git clean -n (Serve para listar os arquivos que não estão sendo rastreados);
+git clean -f (Remove todos os arquivos não rastreados);
+git revert HEAD~posição-do-commit (Reverte alterações do commit especificado);
+git revert sha1 (Reverte alterações do commit especificado);
+git log -p (Apresenta modificações);
+git log --oneline (Listar nomes e alterações commit's);
+git show sha1 (Para ver as modificações do arquivo parecido com diff);
+
+.gitignore (Arquivo para adicionar arquivos que não deseja mandar para o repositório);
+					Exemplo:
+
+.gitignore = .DB_STORE;
+
+

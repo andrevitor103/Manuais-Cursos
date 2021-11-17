@@ -1,0 +1,51 @@
+		SOLID:
+Single responsibility principle:
+	Cada classe, método, etc...
+Devem fazer apenas uma coisa.
+Ex: Classe video não deve ter regras
+de implementação da classe feedback,
+pode ter os feedbacks porém não ter as
+suas validações na própria classe.
+
+Open Closed principle:
+	Princípio de aberto fechado,
+a classe deve ser aberta para extensão
+e fechada para modificação. Se tiver 
+uma regra de negócio onde se tem
+muitos "ifs" por exemplo, deve-se
+pensar em abstrair essa regra em uma
+classe abstrata ou interface 
+de preferência...
+
+Liskov substitution principle:
+	Uma classe extendida, não
+pode alterar a implemetação dos
+métodos da sua classe pai.
+Ex: método getUrl() da classe pai
+retorna 
+"https://www.url.com.br/sua-busca"
+e o mesmo getUrl() da classe filha
+retorna
+"sua-busca", então a classe filha
+substituindo a implementação da 
+classe pai, vindo a gerar retornos
+diferentes entre classes.
+
+Interface segragation principle:
+	Não se deve ter interfaces
+com excesso de responsabilidade,
+uma classe não pode ser forçada a
+depender de métodos que não utilizará.
+
+
+Dependency inversion principle:
+	Classes concretas devem
+depender de interfaces e classes
+abstratas, mas classes abstratas
+e interfaces não devem depender
+de classes concretas. Então não
+devemos saber como determinado
+método e implementado e sim usar
+uma interface ou abstração para
+usar esse método.
+

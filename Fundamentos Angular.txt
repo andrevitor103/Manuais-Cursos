@@ -1,0 +1,44 @@
+			Angular:
+instalar:
+	npm install @angular/cli@0.0.0(versão caso queira)
+criar projeto:
+	ng new nome-projeto
+iniciar servidor:
+	ng serve --open (open opcional)
+instalar bootstrap:
+	npm install bootstrap
+usando bootstrap:
+	angular.json => build => "styles" => adiciona o caminho do bootstrap
+					     pasta node_modules
+props no angular:
+para usar props no angular, declaramos a variável na classe do componente (ts) e
+colocar um @Input na frete. Por exemplo:
+	@Input() nomeVariavel = '';
+
+consumir API:
+para consumir uma API com angular, devemos usar o HttpClient.
+primeiro vamos no módulo (.module) que precisamos usa-lo
+ai importamos HttpClientModule do "@angular/common/http",
+depois podemos importa-lo no ".ts" que precisarmos.
+criando serviços:
+para criar serviços no angular, devemos criar uma classe de serviço normal. Exemplo:
+NomeDoServicoService, porém precisamos colocar antes da classe a diretiva
+@injectable() ai precisamos ir no módulo que deseja usar o serviço e adicionar
+o serviço nos providers. Caso se desejado que o serviço seja generico, ou seja,
+que seja acessível para todos os módulos, então adicionariamos
+@injectable({ providedIn: "root" }).
+criando componentes pelo cli:
+para criar componentes pelo angular-cli, devemos executar
+ng generate component nome_pasta/nome-component (pasta opcional);
+registrando mudanças em props:
+para registrar as mudanças que ocorrem nas props, podemos usar o
+ngOnChages, diferente do ngOnInit, ele executa as suas funções sempre
+quando ocorre uma alteração em alguma props. Exemplo:
+ ngOnChanges(changes: SimpleChanges) {
+    if (changes.photos) {
+      this.rows = this.groupColumns(this.photos);
+   }
+para evitar delays nos componentes:
+quando queremos que um determinado componente já comece carregado,
+podemos criar um "resolve" para adicionarmos na rota, onde
+sempre será criado antes de iniciar o componente.
