@@ -1,0 +1,18 @@
+				Instalar Electron:
+npm init -y (criar o json.package);
+
+npm i --save-dev electron
+
+
+				Compactar Electron:
+
+
+npm install --save-dev @electron-forge/cli
+npx electron-forge import
+
+npm run make
+
+Isso no local do arquivo
+
+
+Referência https://www.electronjs.org/docs/tutorial/quick-start#create-a-basic-application

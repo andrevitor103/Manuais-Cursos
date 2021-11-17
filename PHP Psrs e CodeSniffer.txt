@@ -1,0 +1,20 @@
+		PHP Psrs e CodeSniffer:
+As Psrs são os padrões de desenvolvimento
+de código, para acessar todos os padrões
+vai em https://www.php-fig.org
+Já o PHP CodeSniffer é uma biblioteca
+onde você pode usar para padronizar
+seus códigos de acordo com o padrão
+que deseja.
+Para instalar o CodeSniffer podemos
+usar o composer composer --dev require "squizlabs/php_codesniffer 3.*" 
+Para executar rode " vendor/bin/phpcs src/"
+esse comando vai analisar os códigos
+e mostrar onde está errado, porém
+ele vai testar em todos os padrões
+caso tenha um espéfico use
+"vendor/bin/phpcs src/ --standard=PSR12"
+e depois de analisado os erros deseja
+que o próprio CodeSniffer corrigia
+basta executar "vendor/bin/phpcbf src/ --standard=PSR12"
+mudando apenas o "cs" para "cbf"

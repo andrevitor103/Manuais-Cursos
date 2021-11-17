@@ -1,0 +1,7 @@
+		PHPUnit:
+Para testar usa "vendor/bin/phpunit pastaDeTeste/"
+Para testar com cores "vendor/bin/phpunit pastaDeTeste/ --colors=always"
+Para gerar relatórios txt dos testes 
+"vendor/bin/phpunit pastaDeTeste/ --colors=always --testdox-text=nomeArquivo.txt"
+Para realizar teste com resultado em HTML
+"vendor/bin/phpunit tests/ --testdox-text=report-teste.txt --coverage-html=_report --whitelist=src/"

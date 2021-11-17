@@ -1,0 +1,12 @@
+		Instalando next:
+npx create-next-app nomeApp
+		Para executar Next:
+npm run dev (ou vai no package.json e vai em "scripts" no output e executa por lá)
+		Para instalar Typescript no projeto:
+Criamos um arquivo de configuração Typescript (tyconfig.ts exemplo)
+vamos no terminal e executamos npm install typescript @types/react (no caso de usar Typescript com react)
+Mandando rodar o programa automaticamente já e atribuido valores de regras typescript no arquivo criado
+
+obs: ts e tsx e o mesmo, diferença que tsx e para react
+
+O sx={} usando nos componentes é o mesmo que style={}, porém o sx tem algumas ferramentas a mais
